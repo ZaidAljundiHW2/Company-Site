@@ -1,0 +1,24 @@
+.navBox {
+    display: 'flex';
+    justify-Content: 'center';
+    align-Content: 'center';
+    align-Items: 'center';
+    color: black;
+    background-color: transparent;
+}
+
+.navShadow {
+    position: relative; /* Make sure this is the positioned container for the shadow */
+  }
+  
+  .navShadow::after {
+    content: "";
+    position: absolute;
+    top: 0; /* Align shadow at the top of the navbar */
+    left: 0; /* Align shadow at the left of the navbar */
+    right: 0; /* Align shadow at the right of the navbar */
+    bottom: 0; /* Align shadow at the bottom of the navbar */
+    z-index: -1; /* Ensure the shadow stays behind the navbar content */
+    filter: blur(10px);
+    transform: translate(10px, 8px);
+  }

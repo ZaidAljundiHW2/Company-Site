@@ -1,19 +1,13 @@
 import React from 'react'
-import { Box } from '@chakra-ui/react'
+import NavBar from "./customComponents/navBar"
+import Hero from "./customComponents/hero"
 
 const App = () => {
   return (
     <div>
 
-      <Box bg="white"
-      color="white"
-      px={4}
-      py={3}
-      boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1), 0px -10px 15px rgba(0, 0, 0, 0.15)"
-      position="relative">
-
-      </Box>
-      
+      <NavBar/>
+      <Hero/>      
     </div>
   )
 }
