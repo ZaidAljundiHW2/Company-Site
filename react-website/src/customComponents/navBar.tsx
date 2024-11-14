@@ -60,7 +60,6 @@ const NavBar = () => {
             </Heading>
           </Box>
 
-
         </Box>
       
     </div>
