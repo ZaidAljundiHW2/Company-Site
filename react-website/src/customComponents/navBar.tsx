@@ -24,37 +24,37 @@ const NavBar = () => {
         bottom = {0}
         zIndex={1}
         transform={'transform(10px, 8px)'}
+        justifyContent={'center'}
+        alignContent={'center'}
+        alignItems={'center'}
         >
         
 
           {/* Company Logo */}
-          <Box display={'flex'} justifyContent={'center'} alignContent={'center'} alignItems={'center'} backgroundColor={'transparent'}>
+          <Box display={'static'} justifyContent={'center'} alignContent={'center'} alignItems={'center'} backgroundColor={'transparent'} mr={4}>
               <img src= {CompanyLogo} alt = "Company Logo" height = {35} width = {35} style = {{backgroundColor: 'transparent'}}></img>
           </Box>
 
           {/* Company Name */}
-          <Box className = 'navBox' flex = {.1} display={'flex'} justifyContent={'center'} alignContent={'center'} alignItems={'center'} paddingLeft={2} backgroundColor={'transparent'}>
+          <Box display={'static'} justifyContent={'center'} alignContent={'center'} alignItems={'center'} paddingLeft={2} backgroundColor={'transparent'}>
               <Heading color={'black'} backgroundColor={'transparent'}>
                 Vector Tech
               </Heading>
           </Box>
 
+          <Box flex={1}/>
 
           {/* Options */}
-
-          <Box className = 'navBox' flex = {.1} ml = {'auto'} backgroundColor={'transparent'}>
+          <Box display={'flex'} flex ={.3} backgroundColor={'transparent'} justifyContent={'space-evenly'} alignItems={'center'}>
             <Heading color={'black'} backgroundColor={'transparent'}>
               About Us
             </Heading>
-          </Box>
-
-          <Box className = 'navBox' paddingRight={6} backgroundColor={'transparent'}>
-            <Heading backgroundColor={'transparent'}>
+            <Heading color={'black'} backgroundColor={'transparent'}>
               About Sukoon
             </Heading>
           </Box>
 
-          <Box display={'flex'} alignContent={'center'} justifyContent={'center'} borderRadius = {8} width = {150} bg='black'>
+          <Box display={'flex'} alignContent={'center'} justifyContent={'center'} borderRadius = {8} width = {150} bg={'black'} >
             <Heading color={'white'} display = {'flex'} backgroundColor={'black'}>
               Try Sukoon!
             </Heading>

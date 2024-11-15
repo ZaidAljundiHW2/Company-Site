@@ -1,15 +1,63 @@
-import React from 'react'
-import { Box, Heading } from '@chakra-ui/react'
-import PhInterface from '@/images/placeHolderInterface.jpg'
+import React from 'react';
+import { Box, Button, Heading } from '@chakra-ui/react';
+import PhInterface from '@/images/placeHolderInterface.jpg';
 
-const hero = () => {
+const Hero = () => {
   return (
-    <div>
-      <Box bg={'orange'} width={'1535px'} height={'600px'} position={'relative'} justifyContent={'center'} alignContent={'center'} alignItems={'center'}>
-        <img src={PhInterface} alt="placeholder interface show off" style={{objectFit: 'cover', width: '100%', height: '100%', filter: 'contrast(.5) brightness(.5)'}}></img>
-      </Box>
-    </div>
-  )
-}
+    <>
+    <Box
+      bg="orange"
+      width="100vw" 
+      height="750px" 
+      position="relative"
+      overflow="hidden" 
+    >
+      <img
+        src={PhInterface}
+        alt="placeholder interface show off"
+        style={{
+          objectFit: 'cover', 
+          width: '100%', 
+          height: '100%', 
+          filter: 'contrast(.5) brightness(.5)', 
+        }}
+      />
 
-export default hero
+      <Heading 
+        position={'absolute'} 
+        zIndex={1} color={'white'} 
+        bg={'transparent'} 
+        transform={'translate(-50%, -50%)'} 
+        top={'50%'} 
+        left={'50%'} 
+        fontSize={'70px'}>
+
+        What's the Latest?
+      </Heading>
+      <Button 
+        position={'absolute'} 
+        zIndex={1} 
+        color={'white'} 
+        bg={'black'} 
+        transform={'translate(-50%, -50%)'} 
+        top={'62%'} 
+        left={'50%'} 
+        justifyContent={'center'} 
+        alignContent={'center'}
+        alignItems={'center'} 
+        borderWidth={30}
+        borderRadius={20}>
+        <Heading bg={'transparent'} fontSize={'40px'}>
+          Try Sukoon!
+        </Heading>
+        
+      </Button>
+    </Box>
+    <Box bg={'white'} width={'100vw'} height={'15px'}>
+
+    </Box>
+    </>
+  );
+};
+
+export default Hero;
