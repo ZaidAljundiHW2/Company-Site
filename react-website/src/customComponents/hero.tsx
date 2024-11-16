@@ -1,27 +1,44 @@
 import React from 'react';
 import { Box, Button, Heading } from '@chakra-ui/react';
 import PhInterface from '@/images/placeHolderInterface.jpg';
+import './hero.css'
 
 const Hero = () => {
   return (
     <>
     <Box
       bg="orange"
-      width="100vw" 
+      width="100%" 
       height="750px" 
       position="relative"
-      overflow="hidden" 
+      overflow="visible" 
+      background={'blue'}
+      overflowX={'hidden'}
+      boxSizing={'border-box'} 
     >
-      <img
-        src={PhInterface}
-        alt="placeholder interface show off"
-        style={{
-          objectFit: 'cover', 
-          width: '100%', 
-          height: '100%', 
-          filter: 'contrast(.5) brightness(.5)', 
-        }}
-      />
+
+      <div
+      className='image-container'
+      style={{
+        height: '100%', 
+        background: 'blue',
+        
+      }}>
+        <img
+          src={PhInterface}
+          alt="placeholder interface show off"
+          style={{
+            objectFit: 'cover', 
+            display: 'block',
+            width: '100%', 
+            height: '100%', 
+            filter: 'contrast(.3) brightness(.4)',
+            background: 'blue', 
+          }}
+        />
+
+      </div>
+      
 
       <Heading 
         position={'absolute'} 
@@ -53,7 +70,7 @@ const Hero = () => {
         
       </Button>
     </Box>
-    <Box bg={'white'} width={'100vw'} height={'15px'}>
+    <Box bg={'white'} width={'100%'} height={'15px'} overflowX={'hidden'} boxSizing={'border-box'} >
 
     </Box>
     </>

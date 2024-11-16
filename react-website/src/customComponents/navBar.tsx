@@ -10,8 +10,8 @@ const NavBar = () => {
         <Box 
         bg= {"blue.600"}
         color= {"white"}
-        px={4}
-        py={2.5}
+        width={'100%'}
+        height={'50px'}
         position= {'relative'}
         display={'flex'}
         border={2}
@@ -27,12 +27,14 @@ const NavBar = () => {
         justifyContent={'center'}
         alignContent={'center'}
         alignItems={'center'}
+        boxSizing={'border-box'} 
+        overflowX={'hidden'}
         >
         
 
           {/* Company Logo */}
-          <Box display={'static'} justifyContent={'center'} alignContent={'center'} alignItems={'center'} backgroundColor={'transparent'} mr={4}>
-              <img src= {CompanyLogo} alt = "Company Logo" height = {35} width = {35} style = {{backgroundColor: 'transparent'}}></img>
+          <Box display={'static'} justifyContent={'center'} alignContent={'center'} alignItems={'center'} backgroundColor={'transparent'} mr={4} ml={3}>
+              <img src= {CompanyLogo} alt = "Company Logo" height = {45} width = {45} style = {{backgroundColor: 'transparent'}}></img>
           </Box>
 
           {/* Company Name */}
@@ -45,7 +47,7 @@ const NavBar = () => {
           <Box flex={1}/>
 
           {/* Options */}
-          <Box display={'flex'} flex ={.3} backgroundColor={'transparent'} justifyContent={'space-evenly'} alignItems={'center'}>
+          <Box display={'flex'} flex ={.25} backgroundColor={'transparent'} justifyContent={'space-evenly'} alignItems={'center'}>
             <Heading color={'black'} backgroundColor={'transparent'}>
               About Us
             </Heading>
@@ -54,7 +56,7 @@ const NavBar = () => {
             </Heading>
           </Box>
 
-          <Box display={'flex'} alignContent={'center'} justifyContent={'center'} borderRadius = {8} width = {150} bg={'black'} >
+          <Box display={'flex'} alignContent={'center'} justifyContent={'center'} borderRadius = {8} width = {150} bg={'black'} mr={10}>
             <Heading color={'white'} display = {'flex'} backgroundColor={'black'}>
               Try Sukoon!
             </Heading>

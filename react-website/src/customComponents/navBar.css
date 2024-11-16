@@ -14,3 +14,9 @@
     filter: blur(10px);
     transform: translate(10px, 8px);
   }
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }

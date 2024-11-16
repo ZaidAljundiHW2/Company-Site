@@ -1,3 +1,18 @@
 * {
     background-color: white;
+    font-family: 'SpotifyFont', sans-serif;
+}
+
+@font-face {
+    font-family: 'SpotifyFont';
+    src: url('react-website/src/assets/Spotify-Font/Gotham-Black.otf') format('opentype');
+    weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'specialFont';
+    src: url('react-website\src\assets\Spotify-Font\GothamBook.ttf') format('truetype');
+    weight: 400;
+    font-style: normal;
 }
