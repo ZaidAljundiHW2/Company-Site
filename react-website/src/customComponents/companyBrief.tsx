@@ -19,19 +19,19 @@ const CompanyBrief = () => {
         
       >
         
-        <Heading bg={'transparent'} transform={'translate(15%, 650%)'} fontWeight={100} fontSize={'175%'}>
+        <Heading bg={'transparent'} transform={'translate(8%, 650%)'} fontWeight={100} fontSize={'175%'}>
           Live Peacefully with Nature and Technology.
         </Heading>
 
-        <Heading bg={'transparent'} mt={'40px'} transform={'translate(15%, 650%)'} fontSize={'250%'}>
+        <Heading bg={'transparent'} mt={'40px'} transform={'translate(8%, 650%)'} fontSize={'250%'}>
           Empowering Homes. Conserving Energy.
         </Heading>
 
-        <Heading bg={'transparent'} mt={'-120px'} transform={'translate(20%, 650%)'}>
+        <Heading bg={'transparent'} mt={'-120px'} transform={'translate(8%, 650%)'}>
           Vektor Tech takes the lead in energy conservation innovations <br /> and user convenience in controlling their home.
         </Heading>
 
-        <Heading bg={'transparent'} mt={'4px'} transform={'translate(20%, 265%)'} fontWeight={100} wordBreak={'break-word'}>
+        <Heading bg={'transparent'} mt={'4px'} transform={'translate(13%, 265%)'} fontWeight={100} wordBreak={'break-word'}>
           In a world where cleaner energy alternatives are bleak but gaining momentum, <br /> 
           Vektor Tech shines as a driving force for this movement towards a more sustainable <br />
           future. Debuting with "Sukoon", Vektor Tech aims to seamlessly blend user <br />
@@ -43,7 +43,7 @@ const CompanyBrief = () => {
           About us
         </Button>
 
-        <img src={CompanyDiagram} alt='company diagram' style={{objectFit: 'cover', background: 'transparent', transform: 'translate(200%, -30%)'}} width={'30%'}></img>
+        <img src={CompanyDiagram} alt='company diagram' style={{objectFit: 'cover', background: 'transparent', transform: 'translate(220%, -15%)'}} width={'30%'}></img>
 
       </Box>
 
