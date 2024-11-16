@@ -47,17 +47,17 @@ const NavBar = () => {
           <Box flex={1}/>
 
           {/* Options */}
-          <Box display={'flex'} flex ={.25} backgroundColor={'transparent'} justifyContent={'space-evenly'} alignItems={'center'}>
-            <Heading color={'black'} backgroundColor={'transparent'}>
+          <Box display={'flex'} flex ={.25} backgroundColor={'transparent'} justifyContent={'space-around'} alignItems={'center'} px={[2, 4, 2]}>
+            <Heading color={'black'} backgroundColor={'transparent'} fontSize={['sm', 'md', 'lg']}>
               About Us
             </Heading>
-            <Heading color={'black'} backgroundColor={'transparent'}>
+            <Heading color={'black'} backgroundColor={'transparent'} fontSize={['sm', 'md', 'lg']}>
               About Sukoon
             </Heading>
           </Box>
 
-          <Box display={'flex'} alignContent={'center'} justifyContent={'center'} borderRadius = {8} width = {150} bg={'black'} mr={10}>
-            <Heading color={'white'} display = {'flex'} backgroundColor={'black'}>
+          <Box display={'flex'} alignContent={'center'} justifyContent={'center'} borderRadius = {8} width={[100, 120, 150]} bg={'black'} mr={[5, 8, 10]}  px={[3, 4, 6]}>
+            <Heading color={'white'} display = {'flex'} backgroundColor={'black'} fontSize={['xs', 'sm', 'md']}>
               Try Sukoon!
             </Heading>
           </Box>
