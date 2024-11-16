@@ -9,7 +9,7 @@ const CompanyBrief = () => {
       <Box
         width="100%"
         height="750px"
-        overflowX="hidden" // Prevents overflow
+        overflow="hidden" // Prevents overflow
         boxSizing="border-box" // Ensures padding/border are included in the width
         bg="linear-gradient(90deg, rgb(130, 110, 166), rgb(156, 76, 76))"
         display="flex"
@@ -18,16 +18,18 @@ const CompanyBrief = () => {
       >
         <Heading
           bg="transparent"
-          transform="translate(8%, 650%)"
+          mt={{ base: '10%', md: '8%' }} // Adjust margin-top for smaller screens
+          ml={{base:'10%', md: '8%'}}
           fontWeight={100}
-          fontSize="175%"
+          fontSize={{ base: '125%', md: '175%' }} // Responsive font size
         >
           Live Peacefully with Nature and Technology.
         </Heading>
 
         <Heading
           bg="transparent"
-          mt="40px"
+          mt={{ base: '10%', md: '-8%' }} // Adjust margin-top for smaller screens
+          ml={{base:'10%', md: '0%'}}
           transform="translate(8%, 650%)"
           fontSize="250%"
         >
@@ -85,6 +87,7 @@ const CompanyBrief = () => {
           justifyContent="center"
           alignItems="center"
           background={'transparent'}
+          width={{ base: '90%', md: '75%' }}
         >
           <img
             src={CompanyDiagram}
