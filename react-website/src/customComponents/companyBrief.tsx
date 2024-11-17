@@ -11,7 +11,7 @@ const CompanyBrief = () => {
         height="750px"
         overflow="hidden" // Prevents overflow
         boxSizing="border-box" // Ensures padding/border are included in the width
-        bg="linear-gradient(90deg, rgb(130, 110, 166), rgb(156, 76, 76))"
+        bg="linear-gradient(135deg, #1E3A8A 30%, #2563EB 100%)" // Adjusted background gradient to match website colors
         display="flex"
         flexDirection="column"
         position="relative"
@@ -19,7 +19,7 @@ const CompanyBrief = () => {
         <Heading
           bg="transparent"
           mt={{ base: '10%', md: '8%' }} // Adjust margin-top for smaller screens
-          ml={{base:'10%', md: '8%'}}
+          ml={{ base: '10%', md: '8%' }}
           fontWeight={100}
           fontSize={{ base: '125%', md: '175%' }} // Responsive font size
         >
@@ -29,7 +29,7 @@ const CompanyBrief = () => {
         <Heading
           bg="transparent"
           mt={{ base: '10%', md: '-8%' }} // Adjust margin-top for smaller screens
-          ml={{base:'10%', md: '0%'}}
+          ml={{ base: '10%', md: '0%' }}
           transform="translate(8%, 650%)"
           fontSize="250%"
         >
@@ -41,7 +41,7 @@ const CompanyBrief = () => {
           mt="-120px"
           transform="translate(13%, 650%)"
         >
-          Vektor Tech takes the lead in energy conservation innovations <br /> 
+          Vektor Tech takes the lead in energy conservation innovations <br />
           and user convenience in controlling their home.
         </Heading>
 

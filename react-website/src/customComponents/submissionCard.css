@@ -1,0 +1,125 @@
+/* Submission Card Container */
+.submission-card-container {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+    padding: 32px; /* Inner padding for more spacing */
+    max-width: 600px; /* Width constraint */
+    width: 90%; /* Responsive width */
+    margin: 40px auto; /* Center the card */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.submission-card-container:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+/* Card Heading */
+.submission-card-heading {
+    color: #2b6cb0; /* Blue text color */
+    text-align: center;
+    font-size: 26px; /* Slightly larger font */
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: "Lexend", Sans-serif;
+}
+
+/* Description Text */
+.submission-card-description {
+    color: #4a5568; /* Dark gray for description */
+    text-align: center;
+    margin-bottom: 32px; /* Increase space between description and inputs */
+    font-size: 14px; /* Slightly larger font size for readability */
+    line-height: 1.6;
+    padding-left: 20px; /* Shift text more to the right */
+    font-family: "Lexend", Sans-serif;
+}
+
+/* Input Fields */
+.submission-input {
+    width: 100%; /* Full-width inputs */
+    padding: 14px 16px; /* Slightly more padding for input fields */
+    border: 1px solid #cbd5e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    margin-bottom: 20px; /* Spacing between inputs */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth effects */
+    color: #636d7f; /* Ensure dark text color */
+    background-color: #f7fafc; /* Light background for input field */
+    font-family: "Lexend", Sans-serif;
+}
+
+/* Placeholder Styling */
+.submission-input::placeholder {
+    color: #cbc2c2; /* Light gray placeholder text */
+    font-family: "Lexend", Sans-serif;
+}
+
+/* Focus State for Inputs */
+.submission-input:focus {
+    border-color: #3182ce; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(49, 130, 206, 0.5); /* Glow effect */
+}
+
+/* Submit Button */
+.submission-button {
+    background-color: #3182ce; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 14px 20px; /* Slightly larger button padding */
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%; /* Full-width button */
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Smooth transition with scale */
+}
+
+.submission-button:hover {
+    background-color: #2b6cb0; /* Darker blue on hover */
+    transform: translateY(-2px); /* Button slightly rises on hover */
+}
+
+.submission-button:active {
+    transform: translateY(0); /* Return to original position on click */
+}
+
+/* Focus State for Button */
+.submission-button:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(49, 130, 206, 0.7); /* Enhanced glow effect */
+}
+
+/* Success Message */
+.submission-success {
+    color: #2d3748; /* Darker gray text for better readability */
+    text-align: center;
+    font-size: 18px;
+    margin-top: 24px; /* Increased margin to separate from other content */
+    font-family: "Lexend", Sans-serif;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .submission-card-container {
+        padding: 20px; /* Less padding on mobile for better space management */
+    }
+
+    .submission-card-heading {
+        font-size: 22px; /* Smaller heading on mobile */
+    }
+
+    .submission-input {
+        font-size: 14px; /* Smaller input font size on mobile */
+    }
+
+    .submission-button {
+        padding: 12px 16px; /* Smaller button padding on mobile */
+    }
+
+    .submission-card-description {
+        font-size: 12px; /* Smaller font size on mobile */
+    }
+}
