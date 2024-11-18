@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Heading, Flex } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import CompanyLogo from '@/images/companyLogo.png';
 import './navBar.css';
 
-const navBar = () => {
-  // State to track if the user has scrolled down
+interface NavBarProps {
+  bgColor?: string; // Accept bgColor prop to change navbar background dynamically
+}
+
+const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
   const [scrolled, setScrolled] = useState(false);
 
-  // useEffect to detect scroll events and update state
   useEffect(() => {
     const handleScroll = () => {
-
       if (window.scrollY > 50) {
-        setScrolled(true); // Change state when scrolled past threshold
+        setScrolled(true);
       } else {
-        setScrolled(false); // Reset state when back to top
+        setScrolled(false);
       }
     };
 
-    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -31,7 +31,7 @@ const navBar = () => {
     <Box
       width="100%"
       height="60px"
-      bg={scrolled ? "rgba(0, 0, 0, 0.8)" : "transparent"} // Change color based on scroll
+      bg={scrolled ? 'rgba(0, 0, 0, 0.8)' : bgColor}
       backdropFilter="blur(10px)"
       position="fixed"
       top={0}
@@ -41,91 +41,71 @@ const navBar = () => {
       justifyContent="space-between"
       alignItems="center"
       px={6}
-      shadow={scrolled ? "lg" : "none"} // Add shadow when scrolled
-      transition="background-color 0.3s, box-shadow 0.3s" // Smooth transition
+      shadow={scrolled ? 'lg' : 'none'}
+      transition="background-color 0.3s, box-shadow 0.3s"
     >
-      {/* Company Logo */}
-      <Box display={'flex'} justifyContent={'center'} alignItems={'center'} backgroundColor={'transparent'} mr={4} ml={3}>
+      {/* Left Section: Logo and Company Name */}
+      <Flex align="center" gap={3}>
         <img
           src={CompanyLogo}
           alt="Company Logo"
-          height={99}
-          width={99}
+          height={40}
+          width={40}
           style={{
-            backgroundColor: 'transparent',
             filter: 'brightness(1.5)',
           }}
         />
-      </Box>
-
-      {/* Company Name */}
-      <Box display={'flex'} justifyContent={'center'} alignItems={'center'} backgroundColor={'transparent'}>
         <Heading
-          color={'white'}
-          backgroundColor={'transparent'}
-          fontWeight={'bold'}
-          fontSize={['lg', 'xl', '2xl']}
-          textShadow={'none'}
+          color="white"
+          fontWeight="bold"
+          fontSize={['md', 'lg', 'xl']}
+          textShadow="none"
         >
           Vector Tech
         </Heading>
-      </Box>
+      </Flex>
 
-      <Box flex={1} />
-
-      {/* Nav Options */}
-      <Box display={'flex'} flex={0.25} backgroundColor={'transparent'} justifyContent={'space-around'} alignItems={'center'} px={[2, 4, 2]}>
-        <Heading
-          color={'white'}
-          backgroundColor={'transparent'}
-          fontSize={['sm', 'md', 'lg']}
-          _hover={{
-            color: '#B0C4DE',
-          }}
-          textShadow={'none'}
-        >
-          About Us
-        </Heading>
-        <Heading
-          color={'white'}
-          backgroundColor={'transparent'}
-          fontSize={['sm', 'md', 'lg']}
-          _hover={{
-            color: '#B0C4DE',
-          }}
-          textShadow={'none'}
-        >
-          About Sukoon
-        </Heading>
-      </Box>
-
-      {/* Try Sukoon Button */}
-      <Box
-        display={'flex'}
-        alignContent={'center'}
-        justifyContent={'center'}
-        borderRadius={8}
-        width={[100, 120, 150]}
-        bg={'transparent'}
-        mr={[5, 8, 10]}
-        px={[3, 4, 6]}
-        _hover={{
-          backgroundColor: '#1E3A8A',
-          transform: 'scale(1.05)',
-        }}
-      >
-        <Heading
-          color={'white'}
-          display={'flex'}
-          backgroundColor={'transparent'}
-          fontSize={['xs', 'sm', 'md']}
-          textShadow={'none'}
-        >
-          Try Sukoon!
-        </Heading>
-      </Box>
+      {/* Right Section: Navigation Links */}
+      <Flex align="center" gap={8}>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <Heading
+            color="white"
+            fontSize={['sm', 'md', 'lg']}
+            _hover={{ color: '#B0C4DE' }}
+          >
+            Home
+          </Heading>
+        </Link>
+        <Link to="/about-us" style={{ textDecoration: 'none' }}>
+          <Heading
+            color="white"
+            fontSize={['sm', 'md', 'lg']}
+            _hover={{ color: '#B0C4DE' }}
+          >
+            About Us
+          </Heading>
+        </Link>
+        <Link to="/about-sukoon" style={{ textDecoration: 'none' }}>
+          <Heading
+            color="white"
+            fontSize={['sm', 'md', 'lg']}
+            _hover={{ color: '#B0C4DE' }}
+          >
+            About Sukoon
+          </Heading>
+        </Link>
+        <Link to="/try-sukoon" style={{ textDecoration: 'none' }}>
+          <Heading
+            color="white"
+            fontSize={['sm', 'md', 'lg']}
+            _hover={{ color: '#B0C4DE' }}
+          >
+            Try Sukoon!
+          </Heading>
+        </Link>
+      </Flex>
     </Box>
   );
 };
 
-export default navBar;
+export default NavBar;
