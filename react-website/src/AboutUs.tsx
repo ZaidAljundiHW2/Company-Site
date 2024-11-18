@@ -1,8 +1,7 @@
 import React from 'react';
-import { Box, Heading, Text, Image, VStack, Flex } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack, Flex } from '@chakra-ui/react';
 import NavBar from './customComponents/navBar'; // Import the NavBar
-import animationGif from '@/images/animation.gif';
-import './AboutUs.css';  // Import the CSS file
+import './AboutUs.css'; // Import the CSS file
 
 const AboutUs: React.FC = () => {
   return (
@@ -14,28 +13,15 @@ const AboutUs: React.FC = () => {
         {/* About Us Content */}
         <Box className="about-us-content">
           <Flex
-            direction={['column', 'row']}
+            direction="column"
             justify="center"
             align="center"
-            gap={10}
             padding="40px"
             maxW="1200px"
             mx="auto"
           >
-            {/* Left Side - Image */}
-            <Box flex={1} display="flex" justifyContent="flex-start" alignItems="center">
-              <Image
-                src={animationGif}
-                alt="Smart Home Animation"
-                maxW="400px"
-                maxH="400px"
-                borderRadius="md"
-                shadow="lg"
-              />
-            </Box>
-
-            {/* Right Side - Text Content */}
-            <VStack align="flex-start" flex={1}>
+            {/* Text Content Only */}
+            <VStack align="flex-start">
               <Heading as="h2" size="xl" className="about-us-heading">
                 About Us
               </Heading>
@@ -52,4 +38,5 @@ const AboutUs: React.FC = () => {
 };
 
 export default AboutUs;
+
 
