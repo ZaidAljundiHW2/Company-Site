@@ -1,0 +1,46 @@
+/* AboutUs.css */
+
+/* Set a vibrant blue background for the entire page */
+.about-us-container {
+    background: linear-gradient(to right, #007BFF, #00A2FF); /* Vibrant blue gradient */
+    color: white;
+    padding-top: 60px; /* To give space for the navbar */
+    min-height: 100vh; /* Ensure full height */
+  }
+  
+  /* Content Box Styling */
+  .about-us-content {
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly darkened background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Heading Styling */
+  .about-us-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Description Styling */
+  .about-us-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Styling for the Image on the left */
+  .about-us-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
