@@ -35,7 +35,7 @@ const Hero = () => {
               display: 'block',
               width: '100%',
               height: '100%',
-              filter: 'contrast(0.5) brightness(0.7)', // Image adjustments for better visibility
+              filter: 'contrast(0.5) brightness(1)', // Image adjustments for better visibility
             }}
           />
 

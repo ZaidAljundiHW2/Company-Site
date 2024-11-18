@@ -1,23 +1,29 @@
-import React from 'react'
-import NavBar from "./customComponents/navBar"
-import Hero from "./customComponents/hero"
-import CompanyBrief from "./customComponents/companyBrief"
-import SubmissionCard from './customComponents/submissionCard'
-import Footer from './customComponents/footer'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import AboutUs from './AboutUs';
+import AboutSukoon from './aboutSukoon';
+import TrySukoon from './trySukoon'; // Import the TrySukoon component
+import Footer from './customComponents/footer';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div>
-        <NavBar />
-        <Hero />
-        <CompanyBrief />
-        <SubmissionCard />
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about-sukoon" element={<AboutSukoon />} />
+          <Route path="/try-sukoon" element={<TrySukoon />} /> {/* New route */}
+        </Routes>
         <Footer />
-    </div>
-  )
-}
+      </div>
+    </Router>
+  );
+};
 
 export default App;
+
 
 
 
