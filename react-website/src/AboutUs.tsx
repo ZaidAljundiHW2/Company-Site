@@ -1,17 +1,24 @@
 import React from 'react';
 import { Box, Heading, Text, VStack, Flex } from '@chakra-ui/react';
 import NavBar from './customComponents/navBar'; // Import the NavBar
+import AboutUsHero from './customComponents/aboutUsHero';
 import './AboutUs.css'; // Import the CSS file
+import AboutUsMain from './customComponents/aboutUsMain';
 
 const AboutUs: React.FC = () => {
   return (
     <div>
       <NavBar bgColor="black" /> {/* Black navbar for About Us page */}
 
-      {/* Main Content Section */}
-      <Box className="about-us-container">
+      <AboutUsHero/>
+      <AboutUsMain/>
+
+
+
+      {/* Main Content Section
+      <Box className="about-us-container"> */}
         {/* About Us Content */}
-        <Box className="about-us-content">
+        {/* <Box className="about-us-content">
           <Flex
             direction="column"
             justify="center"
@@ -19,9 +26,9 @@ const AboutUs: React.FC = () => {
             padding="40px"
             maxW="1200px"
             mx="auto"
-          >
+          > */}
             {/* Text Content Only */}
-            <VStack align="flex-start">
+            {/* <VStack align="flex-start">
               <Heading as="h2" size="xl" className="about-us-heading">
                 About Us
               </Heading>
@@ -32,7 +39,7 @@ const AboutUs: React.FC = () => {
             </VStack>
           </Flex>
         </Box>
-      </Box>
+      </Box> */}
     </div>
   );
 };
