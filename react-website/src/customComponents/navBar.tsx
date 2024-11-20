@@ -100,7 +100,7 @@ const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
             fontSize={['sm', 'md', 'lg']}
             _hover={{ color: '#B0C4DE' }}
           >
-            Try Sukoon!
+            SUKOON
           </Heading>
         </Link>
       </Flex>

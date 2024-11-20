@@ -11,7 +11,8 @@ const CompanyBrief = () => {
         height="750px"
         overflow="hidden" // Prevents overflow
         boxSizing="border-box" // Ensures padding/border are included in the width
-        bg="linear-gradient(135deg, #1E3A8A 30%, #2563EB 100%)" // Adjusted background gradient to match website colors
+        // bg="linear-gradient(135deg, #1E3A8A 30%, #2563EB 100%)" // Adjusted background gradient to match website colors
+        bg="linear-gradient(135deg, #28282B 50%, #000000 50%)" // Experimenting with different colours, not final colour scheme change.
         display="flex"
         flexDirection="column"
         position="relative"
@@ -70,9 +71,9 @@ const CompanyBrief = () => {
           transform="translate(120%, 1100%)"
           borderWidth={1}
           borderRadius={8}
-          borderColor="red.700"
-          color="red.900"
-          _hover={{ bg: 'red.700', color: 'white' }}
+          borderColor="#0071e3"
+          color="#0071e3"
+          _hover={{ bg: '#0071e3', color: 'white' }}
         >
           About us
         </Button>

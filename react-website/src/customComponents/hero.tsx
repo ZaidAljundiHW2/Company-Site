@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Heading } from '@chakra-ui/react';
+import { Box, Button, Heading, Flex } from '@chakra-ui/react';
 import PhInterface from '@/images/smartPic.jpg';
 import NavBar from './navBar'; // Import the NavBar
 import './hero.css';
@@ -69,30 +69,57 @@ const Hero = () => {
           What's the Latest?
         </Heading>
 
-        {/* Button */}
-        <Button
+        {/* Buttons Container */}
+        <Flex
           position={'absolute'}
           zIndex={2} // Place it above the overlay
-          color={'white'}
-          bg={'black'}
-          transform={'translate(-50%, -50%)'}
           top={'62%'}
           left={'50%'}
-          display={'flex'}
+          transform={'translate(-50%, -50%)'}
+          gap={6} // Add spacing between buttons
           justifyContent={'center'}
           alignItems={'center'}
-          borderWidth={4}
-          borderRadius={20}
-          padding={'25px 40px'}
-          _hover={{
-            background: 'linear-gradient(90deg, #4A90E2, #1E3A8A)', // Add a hover gradient
-            color: 'white',
-          }}
         >
-          <Heading bg={'transparent'} fontSize={'40px'} margin={0}>
-            Try Sukoon!
-          </Heading>
-        </Button>
+          {/* Button 1 */}
+          <Button
+            color={'white'}
+            bg={'#0071e3'}
+            borderWidth={2}
+            borderRadius={20}
+            padding={'25px 40px'}
+            width={'250px'}
+            borderColor={'#0071e3'}
+            // transition={"background 0.3s ease-in-out"}
+            _hover={{
+              background: 'linear-gradient(90deg, #4A90E2, #1E3A8A)', // Add a hover gradient
+              color: 'white',
+            }}
+          >
+            <Heading bg={'transparent'} fontSize={'35px'} margin={0}>
+              Learn More
+            </Heading>
+          </Button>
+
+          {/* Button 2 */}
+          <Button
+            color={'#0071e3'}
+            bg={'transparent'}
+            borderWidth={2}
+            borderRadius={20}
+            borderColor={'#0071e3'}            
+            padding={'25px 40px'}
+            width={'250px'}
+            role={"group"}
+            _hover={{
+              background: 'linear-gradient(90deg, #4A90E2, #1E3A8A)', // Add a hover gradient
+              color: 'white',
+            }}
+          >
+            <Heading bg={'transparent'} fontSize={'40px'} margin={0} fontWeight={100}>
+              SUKOON
+            </Heading>
+          </Button>
+        </Flex>
       </Box>
 
       {/* Divider Section */}
@@ -108,4 +135,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
