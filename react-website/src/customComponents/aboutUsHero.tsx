@@ -29,6 +29,10 @@ const aboutUsHero = () => {
           Conserving Energy.
         </Heading>
       </Box>
+      
+      <Box width={'100%'} height={'20px'} bg={'black'}>
+
+      </Box>
     </div>
   )
 }

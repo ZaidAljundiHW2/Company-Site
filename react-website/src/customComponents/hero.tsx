@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Heading, Flex } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import PhInterface from '@/images/smartPic.jpg';
 import NavBar from './navBar'; // Import the NavBar
 import './hero.css';
@@ -81,6 +82,7 @@ const Hero = () => {
           alignItems={'center'}
         >
           {/* Button 1 */}
+          <Link to="/about-sukoon">
           <Button
             color={'white'}
             bg={'#0071e3'}
@@ -99,7 +101,7 @@ const Hero = () => {
               Learn More
             </Heading>
           </Button>
-
+          </Link>
           {/* Button 2 */}
           <Button
             color={'#0071e3'}
