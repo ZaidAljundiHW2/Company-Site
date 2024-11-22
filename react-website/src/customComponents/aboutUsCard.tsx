@@ -16,7 +16,7 @@ const AboutUsCard: React.FC<AboutUsCardProps> = ({ onClose }) => {
       bg="black"
       color="white"
       width={["90%", "80%", "70%"]}
-      maxHeight="90vh" // Limit height for viewport constraints
+      maxHeight="90vh" 
       padding={["20px", "40px", "60px"]}
       borderRadius="12px"
       zIndex="1000"
