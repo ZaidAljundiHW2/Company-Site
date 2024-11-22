@@ -68,7 +68,7 @@ const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
 
       {/* Right Section: Navigation Links */}
       <Flex align="center" gap={8}>
-        <ScrollLink to={'home'} smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
+        <ScrollLink to={'hero'} smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
           <Heading
             color="white"
             fontSize={['sm', 'md', 'lg']}
