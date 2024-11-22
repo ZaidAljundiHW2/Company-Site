@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { Box, Heading, Button } from '@chakra-ui/react';
 import './companyBrief.css';
 import CompanyDiagram from '@/images/companyBriefDiagram.png';
+import AboutUsCard from './aboutUsCard';
 
 const CompanyBrief = () => {
+
+  const [isCardVisible, setIsCardVisible] = useState(false);
+
+  const showCard = () => {
+    setIsCardVisible(true);
+    console.log("card is now visible")
+  }
+
+  const closeCard = () => {
+    setIsCardVisible(false);
+    console.log("card is now visible")
+  };
+
   return (
     <div>
       <Box
@@ -74,8 +88,9 @@ const CompanyBrief = () => {
           borderColor="#0071e3"
           color="#0071e3"
           _hover={{ bg: '#0071e3', color: 'white' }}
+          onClick={showCard}
         >
-          About us
+          Learn More
         </Button>
 
         {/* Center the image vertically */}
@@ -109,6 +124,22 @@ const CompanyBrief = () => {
         overflowX="hidden"
         boxSizing="border-box"
       ></Box>
+
+      {/* Dimming effect for background */}
+      {isCardVisible && (
+        <Box
+          position="fixed"
+          top="0"
+          left="0"
+          width="100%"
+          height="100%"
+          bg="rgba(0, 0, 0, 0.5)" // Semi-transparent overlay
+          zIndex="999"
+        />
+      )}
+
+      {/* Show the About Us card when the state is true */}
+      {isCardVisible && <AboutUsCard onClose={closeCard} />}
     </div>
   );
 };

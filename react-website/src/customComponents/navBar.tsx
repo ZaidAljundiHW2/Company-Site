@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Heading, Flex } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink} from 'react-scroll';
+import { Link as RouterLink} from 'react-router-dom';
 import CompanyLogo from '@/images/companyLogo.png';
 import './navBar.css';
 
@@ -67,7 +68,7 @@ const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
 
       {/* Right Section: Navigation Links */}
       <Flex align="center" gap={8}>
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <ScrollLink to={'home'} smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
           <Heading
             color="white"
             fontSize={['sm', 'md', 'lg']}
@@ -75,8 +76,8 @@ const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
           >
             Home
           </Heading>
-        </Link>
-        <Link to="/about-us" style={{ textDecoration: 'none' }}>
+        </ScrollLink>
+        <ScrollLink to="aboutUs" smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
           <Heading
             color="white"
             fontSize={['sm', 'md', 'lg']}
@@ -84,8 +85,8 @@ const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
           >
             About Us
           </Heading>
-        </Link>
-        <Link to="/about-sukoon" style={{ textDecoration: 'none' }}>
+        </ScrollLink>
+        <ScrollLink to="aboutSukoon" smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
           <Heading
             color="white"
             fontSize={['sm', 'md', 'lg']}
@@ -93,8 +94,17 @@ const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
           >
             About Sukoon
           </Heading>
-        </Link>
-        <Link to="/try-sukoon" style={{ textDecoration: 'none' }}>
+        </ScrollLink>
+        <ScrollLink to="contactUs" smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
+          <Heading
+            color="white"
+            fontSize={['sm', 'md', 'lg']}
+            _hover={{ color: '#B0C4DE' }}
+          >
+            Contact Us
+          </Heading>
+        </ScrollLink>
+        <RouterLink to="/try-sukoon" style={{ textDecoration: 'none' }}>
           <Heading
             color="white"
             fontSize={['sm', 'md', 'lg']}
@@ -102,7 +112,7 @@ const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
           >
             SUKOON
           </Heading>
-        </Link>
+        </RouterLink>
       </Flex>
     </Box>
   );
