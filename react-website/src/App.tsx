@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <Router>
       <div>
         {/* Sections */}
-        <section id="home">
+        <section id="hero">
           <Hero />
         </section>
         <section id="aboutUs">
