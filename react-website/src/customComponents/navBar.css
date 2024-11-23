@@ -1,22 +1,58 @@
+/* Add a container for the hamburger button */
+.hamburger-button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust spacing between lines */
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  margin: 8px 0; 
+}
 
+/* Style for each line of the hamburger icon */
+.hamburger-button div {
+  width: 100%;
+  height: 0.5px; /* Reduced to 1px for very thin lines */
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 5px 0; /* Increase space between lines */
+}
+
+/* Animation when the hamburger icon is clicked (open state) */
+.hamburger-button.open div:nth-child(1) {
+  transform: rotate(45deg); /* Rotate the first line */
+  position: relative;
+  top: 8px; /* Adjust position */
+}
+
+.hamburger-button.open div:nth-child(2) {
+  opacity: 0; /* Hide the middle line */
+}
+
+.hamburger-button.open div:nth-child(3) {
+  transform: rotate(-45deg); /* Rotate the third line */
+  position: relative;
+  top: -8px; /* Adjust position */
+}
+
+/* NavBar Shadow Effect */
 .navShadow {
-  position: relative; /* Make sure this is the positioned container for the shadow */
+  position: relative;
 }
 
 .navShadow::after {
   content: "";
   position: absolute;
-  top: 0; /* Align shadow at the top of the navbar */
-  left: 0; /* Align shadow at the left of the navbar */
-  right: 0; /* Align shadow at the right of the navbar */
-  bottom: 0; /* Align shadow at the bottom of the navbar */
-  z-index: -1; /* Ensure the shadow stays behind the navbar content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
   filter: blur(10px);
   transform: translate(10px, 8px);
 }
 
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}

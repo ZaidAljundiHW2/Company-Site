@@ -38,9 +38,9 @@ const SubmissionCard = () => {
     <div style={{
       background: 'linear-gradient(135deg, #1E3A8A, #3B82F6)', // Blue gradient background
       padding: '40px', // Padding inside the div
-      borderRadius: '10px', // Rounded corners
+      //borderRadius: '10px', // Rounded corners
       boxShadow: '0 6px 15px rgba(0, 0, 0, 0.1)', // Subtle shadow for depth
-      marginTop: '40px', // Add margin on top
+     // marginTop: '40px', // Add margin on top
     }}>
       <Box className="submission-card-container">
         <Heading className="submission-card-heading">Submit Your Enquiry</Heading>

@@ -16,3 +16,11 @@ body {
     weight: 400;
     font-style: normal;
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

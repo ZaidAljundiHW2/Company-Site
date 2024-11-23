@@ -1,6 +1,124 @@
+/* Reset styles for box-sizing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container styles */
+.company-brief-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+  grid-template-rows: auto; /* Responsive row height */
+  width: 100%;
+  height: 750px;
+  background: linear-gradient(135deg, #28282b 50%, #000000 50%);
+  position: relative;
+  overflow: hidden; /* Ensures the image doesn't overflow the container */
+}
+
+/* Content container (Text area) */
+.content-container {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+}
+
+.heading-primary {
+  font-size: 1.75rem; /* Adjust font size */
+  font-weight: 100;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.heading-tertiary {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.heading-quaternary {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.learn-more-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #0071e3;
+  color: #0071e3;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #0071e3;
+  color: white;
+}
+
+/* Image container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Prevents image overflow */
+}
+
+.image-wrapper {
+  width: 85%;
+  height: auto;
+  border-radius: 50%; /* Circular shape for the image */
+  overflow: hidden; /* Clips the content to the shape */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Adds a shadow effect */
+}
+
+.company-image {
+  width: 100%; /* Fit inside the wrapper */
+  object-fit: cover; /* Ensures the image scales properly */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .company-brief-container {
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-rows: auto auto; /* Separate rows for content and image */
+    height: auto;
   }
-  
+
+  .content-container {
+    padding: 10px;
+    align-items: center; /* Center align for mobile */
+    text-align: center;
+  }
+
+  .heading-primary,
+  .heading-secondary,
+  .heading-tertiary,
+  .heading-quaternary {
+    font-size: 1rem; /* Adjust font sizes for mobile */
+    margin-bottom: 20px; /* Add more spacing between text */
+  }
+
+  .image-container {
+    margin-top: -20px; /* Move the image closer to the top */
+  }
+
+  .image-wrapper {
+    width: 90%; /* Slightly larger image for mobile */
+    margin-top: 10px; /* More space between text and image */
+  }
+}
+

@@ -6,7 +6,7 @@
     padding: 32px; /* Inner padding for more spacing */
     max-width: 600px; /* Width constraint */
     width: 90%; /* Responsive width */
-    margin: 40px auto; /* Center the card */
+    /*margin: 40px auto; /* Center the card */
     transition: box-shadow 0.3s ease; /* Smooth transition on hover */
 }
 

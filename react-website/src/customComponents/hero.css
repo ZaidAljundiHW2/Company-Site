@@ -1,9 +1,12 @@
+/* Ensure image-container takes full width and adjusts for different screen sizes */
 .image-container {
     position: relative;
-    width: 100%; 
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
+/* Gradient overlay to darken the image */
 .image-container::after {
     content: "";
     position: absolute;
@@ -12,19 +15,124 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 100%);
-    z-index: 1; 
-    pointer-events: none; 
+    z-index: 1;
+    pointer-events: none;
 }
 
+/* Adjust the image to cover the container while maintaining aspect ratio */
 .image-container img {
     display: block;
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+/* Make sure the body and html take the full width */
 html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+/* Optional: Add a media query for smaller screens if necessary */
+@media (max-width: 768px) {
+    .image-container img {
+        object-fit: contain; /* Adjust the image on smaller screens to avoid clipping */
+    }
+}
+  
+  /* General Resets for HTML and Body */
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
+  
+  /* Hero Heading */
+  .hero-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem; /* Default for larger screens */
+    text-align: center;
+    z-index: 2;
+    padding: 0 10px; /* To ensure text doesn't touch the sides */
+  }
+  
+  /* Buttons Container */
+  .hero-buttons {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .hero-button {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid #0071e3;
+    background: transparent;
+    color: #0071e3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background: linear-gradient(90deg, #4A90E2, #1E3A8A);
+    color: white;
+  }
+  
+  .hero-button .hero-heading {
+    font-size: 1.5rem;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .hero-heading {
+      font-size: 2.5rem; /* Smaller heading on mobile */
+      padding: 0 20px; /* Add padding on sides for readability */
+    }
+  
+    .hero-buttons {
+      flex-direction: column; /* Stack the buttons vertically */
+      gap: 1rem;
+      top: 70%; /* Adjust position of buttons for mobile */
+    }
+  
+    .hero-button {
+      padding: 1rem 2rem;
+      font-size: 1rem; /* Smaller button font size */
+    }
+  
+    .image-container img {
+      filter: contrast(0.8) brightness(0.7); /* Adjust brightness and contrast for mobile */
+    }
+  
+    .hero-container::after {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Darker overlay on mobile */
+    }
+  }
+  
+  /* Extra Small Mobile Devices */
+  @media screen and (max-width: 480px) {
+    .hero-heading {
+      font-size: 2rem;
+    }
+  
+    .hero-buttons {
+      top: 75%; /* Further adjust button position for small devices */
+    }
+  
+    .hero-button {
+      padding: 0.8rem 1.8rem;
+      font-size: 0.9rem; /* Further decrease button size */
+    }
+  }
+  

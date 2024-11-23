@@ -1,6 +1,6 @@
-import React from 'react';
-import { Box, Heading, Text, Flex, IconButton } from '@chakra-ui/react';
-import { CloseButton } from '@/components/ui/close-button';
+import React from "react";
+import { Box, Heading, Text, Flex } from "@chakra-ui/react";
+import { CloseButton } from "@/components/ui/close-button";
 
 interface AboutUsCardProps {
   onClose: () => void;
@@ -15,66 +15,108 @@ const AboutUsCard: React.FC<AboutUsCardProps> = ({ onClose }) => {
       transform="translate(-50%, -50%)"
       bg="black"
       color="white"
-      width={['90%', '80%', '60%']} // Adjust width on different screen sizes
-      padding={['30px', '40px', '60px']} // Adjust padding on different screen sizes
-      borderRadius="8px"
+      width={["90%", "80%", "70%"]}
+      maxHeight="90vh" 
+      padding={["20px", "40px", "60px"]}
+      borderRadius="12px"
       zIndex="1000"
-      boxShadow="0px 4px 8px rgba(0, 0, 0, 0.5)"
+      boxShadow="0px 8px 16px rgba(0, 0, 0, 0.8)"
       display="flex"
       flexDir="column"
       alignItems="center"
-      justifyContent="center"
     >
+      {/* Close Button */}
       <CloseButton
-        top={['-30%', '-40%', '-50%']}
-        right={['-30%', '-40%', '-45%']}
+        position="absolute"
+        top="10px"
+        right="10px"
         onClick={onClose}
+        size="lg"
       />
 
+      {/* Centered Heading */}
       <Heading
-        mb={12}
-        fontSize={['3xl', '4xl', '5xl']} // Adjust font size on different screen sizes
-        fontWeight="200"
+        mb={6}
+        fontSize={["xl", "2xl", "3xl"]}
+        fontWeight="bold"
         textAlign="center"
       >
         About Vektor Tech
       </Heading>
 
-      <Box bg="white" width="90%" height="2px" mb={8} />
+      {/* Divider */}
+      <Box bg="white" width="60%" height="2px" mb={6} />
 
-      {/* Columns Container */}
+      {/* Content Columns */}
       <Flex
+        direction={["column", "row"]}
         justify="space-between"
-        mb={4}
-        gap={[4, 6]} // Adjust gap on different screen sizes
-        flexWrap="wrap"
-        textAlign="center"
+        align={["center", "flex-start"]}
+        gap={4}
+        mb={6}
+        width="100%"
       >
-        <Box flex="1" minW="250px" mb={[4, 0]}>
-          <Heading mb={6} fontSize={['xl', '2xl', '3xl']}>Our Mission</Heading>
-          <Text fontSize={['md', 'lg', 'xl']} letterSpacing="wider">
-            Vektor Tech is a young and new institution that specialises in providing innovative solutions to various energy conservation related challenges. With a team composed of third year computer science students at Heriot-Watt University, the institute hopes to offer many services including a platform for smart home management and energy optimization in your very own home.
+        {/* Column: Our Mission */}
+        <Box
+          flex="1"
+          textAlign="center"
+          px={[2, 4]}
+          mb={[4, 0]}
+        >
+          <Heading mb={3} fontSize={["md", "lg", "xl"]}>
+            Our Mission
+          </Heading>
+          <Text fontSize={["sm", "md", "lg"]} lineHeight="short">
+            Vektor Tech is a young institution specializing in innovative energy
+            conservation solutions. With a team of third-year computer science
+            students at Heriot-Watt University, we aim to provide smart home
+            management and energy optimization platforms.
           </Text>
         </Box>
 
-        <Box flex="1" minW="250px" mb={[4, 0]}>
-          <Heading mb={6} fontSize={['xl', '2xl', '3xl']}>Our Values</Heading>
-          <Text fontSize={['md', 'lg', 'xl']} letterSpacing="wider">
-            At Vektor Tech, we believe that the rise of renewable energy is gaining momentum, and we would like to offer our services to make the best of what humans can do to better the environment. Our team works closely with clients to understand their specific needs and develop custom platforms like our debut project "Sukoon" to deliver measurable results.
+        {/* Column: Our Values */}
+        <Box
+          flex="1"
+          textAlign="center"
+          px={[2, 4]}
+          mb={[4, 0]}
+        >
+          <Heading mb={3} fontSize={["md", "lg", "xl"]}>
+            Our Values
+          </Heading>
+          <Text fontSize={["sm", "md", "lg"]} lineHeight="short">
+            At Vektor Tech, we are dedicated to renewable energy. Our team
+            develops tailored solutions like "Sukoon" to meet the specific needs
+            of clients and drive positive environmental impact.
           </Text>
         </Box>
 
-        <Box flex="1" minW="250px" mb={[4, 0]}>
-          <Heading mb={6} fontSize={['xl', '2xl', '3xl']}>Our Vision</Heading>
-          <Text fontSize={['md', 'lg', 'xl']} letterSpacing="wider">
-            Vektor Tech is committed to revolutionizing the way we live by integrating cutting-edge technology with energy-efficient solutions. Our vision is to provide smarter homes for a more sustainable future. We strive to empower individuals to reduce their environmental impact while enjoying the comfort of advanced automation and intelligent systems.
+        {/* Column: Our Vision */}
+        <Box
+          flex="1"
+          textAlign="center"
+          px={[2, 4]}
+          mb={[4, 0]}
+        >
+          <Heading mb={3} fontSize={["md", "lg", "xl"]}>
+            Our Vision
+          </Heading>
+          <Text fontSize={["sm", "md", "lg"]} lineHeight="short">
+            We aim to integrate cutting-edge technology with energy-efficient
+            solutions. Our vision is to create smarter homes for a sustainable
+            future and empower individuals to reduce their environmental impact.
           </Text>
         </Box>
       </Flex>
 
-      <Box justifyContent="center" alignContent="center" alignItems="center" textAlign="center">
-        <Text fontSize={['md', 'lg', 'xl']} letterSpacing="wider">
-          Our pursuit in mastering and applying the most functional and convenient energy management systems has led us to SUKOON as our main selling point. Our blend of strategic management and solution expertise with our small size has allowed us to create boutique and tailored services to our customers to achieve energy management.
+      {/* Final Wide Text Section */}
+      <Box textAlign="center" mt={4} px={[2, 4]}>
+        <Text fontSize={["sm", "md", "lg"]} lineHeight="short">
+          Our pursuit of mastering and applying functional energy management
+          systems has led us to "Sukoon" as our flagship product. By combining
+          strategic planning and innovative solutions, we provide boutique
+          services that help customers achieve energy management goals with
+          ease and precision.
         </Text>
       </Box>
     </Box>
