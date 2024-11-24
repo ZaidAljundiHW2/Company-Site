@@ -75,27 +75,27 @@ const NavBar: React.FC<NavBarProps> = ({ bgColor = 'transparent' }) => {
         display={{ base: 'none', md: 'flex' }} // Hide on mobile, show on desktop
       >
         <ScrollLink to={'home'} smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
-          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE' }}>
+          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE', cursor: "button" }}>
             Home
           </Heading>
         </ScrollLink>
         <ScrollLink to="aboutUs" smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
-          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE' }}>
+          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE', cursor: "button" }}>
             About Us
           </Heading>
         </ScrollLink>
         <ScrollLink to="aboutSukoon" smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
-          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE' }}>
+          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE', cursor: "button" }}>
             About Sukoon
           </Heading>
         </ScrollLink>
         <ScrollLink to="contactUs" smooth={true} duration={500} offset={-60} style={{ textDecoration: 'none' }}>
-          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE' }}>
+          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE', cursor: "button" }}>
             Contact Us
           </Heading>
         </ScrollLink>
         <RouterLink to="/try-sukoon" style={{ textDecoration: 'none' }}>
-          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE' }}>
+          <Heading color="white" fontSize={['sm', 'md', 'lg']} _hover={{ color: '#B0C4DE', cursor: "button" }}>
             SUKOON
           </Heading>
         </RouterLink>

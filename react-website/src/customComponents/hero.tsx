@@ -54,74 +54,75 @@ const Hero = () => {
             }}
           ></div>
         </div>
-
-        {/* Heading */}
-        <Heading
-          position={'absolute'}
-          zIndex={3} // Ensure heading stays above the buttons
-          color={'white'}
-          bg={'transparent'}
-          transform={'translate(-50%, -50%)'}
-          top={{ base: '30%', sm: '35%', md: '40%', lg: '45%' }} // Adjust top for different screen sizes
-          left={'50%'}
-          fontSize={{ base: '30px', sm: '40px', md: '50px', lg: '70px' }} // Responsive font size
-          textAlign="center"
-          lineHeight={{ base: '36px', sm: '45px', md: '55px', lg: '80px' }} // Adjust line height for better readability
-        >
-          What's the Latest?
-        </Heading>
-
-        {/* Buttons Container */}
+        
         <Flex
-          position={'absolute'}
-          zIndex={2} // Ensure buttons stay below the heading
-          top={{ base: '55%', sm: '60%', md: '70%' }} // Adjust top to reduce the space between text and buttons on mobile
-          left={'50%'}
-          transform={'translate(-50%, -50%)'}
-          gap={{ base: 4, sm: 6, md: 8 }} // Adjust button gap for mobile
-          justifyContent={'center'}
-          alignItems={'center'}
-          direction={{ base: 'column', sm: 'row', md: 'row' }} // Stack buttons on mobile
+          position='absolute'
+          zIndex={2}
+          top='50%'
+          left='50%'
+          transform='translate(-50%, -50%)'
+          direction='column'
+          align='center'
+          justify='center'
+          gap={{ base: 4, sm: 6, md: 8 }}
         >
-          {/* Button 1 */}
-          <Link to="/about-sukoon">
+
+        
+          {/* Heading */}
+          <Heading
+            color={'white'}
+            fontSize={{ base: '30px', sm: '40px', md: '50px', lg: '70px' }} // Responsive font size
+            textAlign="center"
+            lineHeight={{ base: '36px', sm: '45px', md: '55px', lg: '80px' }} // Adjust line height for better readability
+          >
+            What's the Latest?
+          </Heading>
+
+          {/* Buttons Container */}
+          <Flex
+            gap={{ base: 2, sm: 4, md: 6 }} // Adjust button gap for mobile
+            direction={{ base: 'column', sm: 'row' }}
+            justify={'center'}
+            >
+            {/* Button 1 */}
+            <Link to="/about-sukoon">
+              <Button
+                color={'white'}
+                bg={'#0071e3'}
+                borderWidth={2}
+                borderRadius={20}
+                padding={{ base: '15px 30px', md: '25px 40px' }} // Adjust padding for mobile
+                borderColor={'#0071e3'}
+                _hover={{
+                  background: 'linear-gradient(90deg, #4A90E2, #1E3A8A)',
+                  color: 'white',
+                }}
+              >
+                <Heading bg={'transparent'} fontSize={{ base: '20px', md: '35px' }} margin={0}>
+                  Learn More
+                </Heading>
+              </Button>
+            </Link>
+
+            {/* Button 2 */}
             <Button
-              color={'white'}
-              bg={'#0071e3'}
+              color={'#0071e3'}
+              bg={'transparent'}
               borderWidth={2}
               borderRadius={20}
-              padding={{ base: '15px 30px', md: '25px 40px' }} // Adjust padding for mobile
-              width={{ base: '200px', md: '250px' }} // Adjust width for mobile
               borderColor={'#0071e3'}
+              padding={{ base: '15px 30px', md: '25px 40px' }} // Adjust padding for mobile
               _hover={{
                 background: 'linear-gradient(90deg, #4A90E2, #1E3A8A)',
                 color: 'white',
               }}
             >
-              <Heading bg={'transparent'} fontSize={{ base: '20px', md: '35px' }} margin={0}>
-                Learn More
+              <Heading bg={'transparent'} fontSize={{ base: '20px', md: '40px' }} margin={0} fontWeight={100}>
+                SUKOON
               </Heading>
             </Button>
-          </Link>
+          </Flex>
 
-          {/* Button 2 */}
-          <Button
-            color={'#0071e3'}
-            bg={'transparent'}
-            borderWidth={2}
-            borderRadius={20}
-            borderColor={'#0071e3'}
-            padding={{ base: '15px 30px', md: '25px 40px' }} // Adjust padding for mobile
-            width={{ base: '200px', md: '250px' }} // Adjust width for mobile
-            _hover={{
-              background: 'linear-gradient(90deg, #4A90E2, #1E3A8A)',
-              color: 'white',
-            }}
-          >
-            <Heading bg={'transparent'} fontSize={{ base: '20px', md: '40px' }} margin={0} fontWeight={100}>
-              SUKOON
-            </Heading>
-          </Button>
         </Flex>
       </Box>
 

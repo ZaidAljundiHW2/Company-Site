@@ -41,6 +41,10 @@ const SubmissionCard = () => {
       //borderRadius: '10px', // Rounded corners
       boxShadow: '0 6px 15px rgba(0, 0, 0, 0.1)', // Subtle shadow for depth
      // marginTop: '40px', // Add margin on top
+      justifyContent: 'center',
+      alignContent: 'center',
+      alignItems: 'center',
+      display: 'flex',
     }}>
       <Box className="submission-card-container">
         <Heading className="submission-card-heading">Submit Your Enquiry</Heading>

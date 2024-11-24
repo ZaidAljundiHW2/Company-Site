@@ -8,7 +8,14 @@
     width: 90%; /* Responsive width */
     /*margin: 40px auto; /* Center the card */
     transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
+
+
 
 .submission-card-container:hover {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
@@ -105,6 +112,9 @@
 @media screen and (max-width: 768px) {
     .submission-card-container {
         padding: 20px; /* Less padding on mobile for better space management */
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     .submission-card-heading {

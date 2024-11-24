@@ -59,6 +59,9 @@ html, body {
     text-align: center;
     z-index: 2;
     padding: 0 10px; /* To ensure text doesn't touch the sides */
+    display: flex;
+    padding-top: 80px;
+    
   }
   
   /* Buttons Container */
@@ -71,6 +74,7 @@ html, body {
     gap: 2rem;
     justify-content: center;
     z-index: 2;
+    padding-top: -150px;
   }
   
   .hero-button {
@@ -82,6 +86,7 @@ html, body {
     color: #0071e3;
     cursor: pointer;
     transition: all 0.3s ease;
+    
   }
   
   .hero-button:hover {

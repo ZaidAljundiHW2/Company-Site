@@ -16,6 +16,7 @@ const CompanyBrief = () => {
   };
 
   return (
+    <>
     <div className="company-brief-container">
       <div className="content-container">
         <Heading className="heading-primary">
@@ -67,8 +68,20 @@ const CompanyBrief = () => {
         />
       )}
 
+    
+
       {isCardVisible && <AboutUsCard onClose={closeCard} />}
     </div>
+
+    <Box
+    bg={'white'}
+    width={'100%'}
+    height={'15px'}
+    overflowX={'hidden'}
+    boxSizing={'border-box'}
+    ></Box>
+
+    </>
   );
 };
 
