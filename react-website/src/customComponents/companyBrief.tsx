@@ -3,6 +3,7 @@ import { Box, Heading, Button } from '@chakra-ui/react';
 import './companyBrief.css';
 import CompanyDiagram from '@/images/companyBriefDiagram.png';
 import AboutUsCard from './aboutUsCard';
+import { motion } from 'framer-motion';
 
 const CompanyBrief = () => {
   const [isCardVisible, setIsCardVisible] = useState(false);
@@ -70,7 +71,19 @@ const CompanyBrief = () => {
 
     
 
-      {isCardVisible && <AboutUsCard onClose={closeCard} />}
+      {isCardVisible && (
+        
+        <motion.div
+          initial={{opacity: 0, y:50}}
+          animate={{opacity: 1, y:0}}
+          transition={{duration:.5}}
+        >
+
+        <AboutUsCard onClose={closeCard} />
+        
+        </motion.div>
+      )}
+        
     </div>
 
     <Box

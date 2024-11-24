@@ -17,7 +17,7 @@ const AboutUsCard: React.FC<AboutUsCardProps> = ({ onClose }) => {
       color="white"
       width={["90%", "80%", "70%"]}
       maxHeight="90vh" 
-      padding={["20px", "40px", "60px"]}
+      padding={["10px", "20px", "40px"]}
       borderRadius="12px"
       zIndex="1000"
       boxShadow="0px 8px 16px rgba(0, 0, 0, 0.8)"
