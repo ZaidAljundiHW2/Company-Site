@@ -78,6 +78,7 @@
   align-items: center;
   position: relative;
   overflow: hidden; /* Prevents image overflow */
+  height: 100%;
 }
 
 .image-wrapper {
