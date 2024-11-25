@@ -27,18 +27,18 @@ const CompanyBrief = () => {
           Empowering Homes. Conserving Energy.
         </Heading>
         <Heading className="heading-tertiary">
-          Vektor Tech takes the lead in energy conservation innovations <br />
+          Vektor Tech takes the lead in energy conservation innovations 
           and user convenience in controlling their home.
         </Heading>
         <Heading className="heading-quaternary">
           In a world where cleaner energy alternatives are bleak but gaining
-          momentum, <br />
+          momentum,
           Vektor Tech shines as a driving force for this movement towards a more
-          sustainable <br />
+          sustainable 
           future. Debuting with "Sukoon", Vektor Tech aims to seamlessly blend
-          user <br />
+          user 
           convenience and comfortability with energy conservation and the
-          reduction of <br />
+          reduction of
           energy waste. Vektor Tech is here to help you live better — for both
           you and the planet.
         </Heading>
