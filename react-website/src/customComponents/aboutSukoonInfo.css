@@ -1,4 +1,46 @@
 .aboutUsImages {
-    width: 40%;
-    
+    width: 65%; /* Ensure the image fits within the container */
+    object-fit: contain; /* Prevent image distortion */
+    margin: 0 auto; /* Center the images horizontally */
+}
+
+.aboutUsImageContainer, .aboutUsHeadingContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Add padding for spacing around the content */
+}
+
+.aboutUsHeadingContainer {
+    justify-content: flex-start;
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+    margin-right: 300px;
+}
+
+.aboutUsImageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align the image container to the left */
+    align-items: center;
+    padding: 10px; /* Optional: Add some spacing inside the container */
+    margin-right: 300px; /* Push the container further to the left */
+}
+
+.aboutUsFlexContainers {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Default direction for smaller screens */
+    align-items: center; /* Align items in the cross-axis (vertical for column direction) */
+    margin-bottom: 30px; /* Add space below each flex container */
+    justify-content: center; /* Center items along the main axis */
+    gap: 20px; /* Space between the image and heading containers */
+    padding: 20px; /* Add padding around the whole container */
+}
+
+@media (min-width: 768px) {
+    .aboutUsFlexContainers {
+        flex-direction: row; /* Changes direction to row for medium and larger screens */
+        gap: 40px; /* Add more space between the image and heading for larger screens */
+    }
 }

@@ -70,19 +70,18 @@ const AboutSukoonInfo = () => {
         </Box>
 
         <Flex
-        direction={{base: 'column', md: 'row'}}
-        alignItems={'center'}
-        mb={20}
+        className='aboutUsFlexContainers'
         >
             <Box
-            flex={1}
-
+            className='aboutUsImageContainer'
             >
                 <img src={RoomLayout} alt="room layout image" className='aboutUsImages'/>
 
             </Box>
 
-            <Box>
+            <Box 
+            className='aboutUsHeadingContainer'
+            >
                 <Heading>
                     Organise devices into rooms!
 
@@ -91,19 +90,18 @@ const AboutSukoonInfo = () => {
         </Flex>
 
         <Flex
-        direction={{base: 'column', md: 'row'}}
-        alignItems={'center'}
-        mb={20}
+        className='aboutUsFlexContainers'
         >
             <Box
-            flex={1}
-
+            className='aboutUsImageContainer'
             >
                 <img src={DeviceConfig} alt="room layout image" className='aboutUsImages'/>
 
             </Box>
 
-            <Box>
+            <Box
+            className='aboutUsHeadingContainer'
+            >
                 <Heading>
                     Configure Devices Remotely!
 
@@ -112,19 +110,17 @@ const AboutSukoonInfo = () => {
         </Flex>
 
         <Flex
-        direction={{base: 'column', md: 'row'}}
-        alignItems={'center'}
-        mb={20}
+        className='aboutUsFlexContainers'
         >
             <Box
-            flex={1}
+            className='aboutUsImageContainer'
 
             >
                 <img src={ViewStats} alt="room layout image" className='aboutUsImages'/>
 
             </Box>
 
-            <Box>
+            <Box className='aboutUsHeadingContainer'>
                 <Heading>
                     View your consumption statistics!
 
@@ -133,19 +129,16 @@ const AboutSukoonInfo = () => {
         </Flex>
 
         <Flex
-        direction={{base: 'column', md: 'row'}}
-        alignItems={'center'}
-        mb={20}
+        className='aboutUsFlexContainers'
         >
             <Box
-            flex={1}
-
+            className='aboutUsImageContainer'
             >
                 <img src={Beati} alt="room layout image" className='aboutUsImages'/>
 
             </Box>
 
-            <Box>
+            <Box className='aboutUsHeadingContainer'>
                 <Heading>
                     Play our game in "Be'ati"!
 
@@ -154,19 +147,17 @@ const AboutSukoonInfo = () => {
         </Flex>
 
         <Flex
-        direction={{base: 'column', md: 'row'}}
-        alignItems={'center'}
-        mb={20}
+        className='aboutUsFlexContainers'
         >
             <Box
-            flex={1}
+            className='aboutUsImageContainer'
 
             >
                 <img src={CustomiseAccount} alt="room layout image" className='aboutUsImages'/>
 
             </Box>
 
-            <Box>
+            <Box className='aboutUsHeadingContainer'>
                 <Heading>
                     Customise Your Profile!
 
@@ -175,19 +166,17 @@ const AboutSukoonInfo = () => {
         </Flex>
 
         <Flex
-        direction={{base: 'column', md: 'row'}}
-        alignItems={'center'}
-        mb={20}
+        className='aboutUsFlexContainers'
         >
             <Box
-            flex={1}
+            className='aboutUsImageContainer'
 
             >
                 <img src={Chatbot} alt="room layout image" className='aboutUsImages'/>
 
             </Box>
 
-            <Box>
+            <Box className='aboutUsHeadingContainer'>
                 <Heading>
                     Chat with the "Energy Genie"!
 
