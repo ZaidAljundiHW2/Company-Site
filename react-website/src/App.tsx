@@ -4,6 +4,7 @@ import Hero from './customComponents/hero';
 import CompanyBrief from './customComponents/companyBrief';
 import SubmissionCard from './customComponents/submissionCard';
 import Footer from './customComponents/footer';
+import AboutSukoon from './customComponents/aboutSukoon';
 
 const App: React.FC = () => {
   return (
@@ -16,9 +17,13 @@ const App: React.FC = () => {
         <section id="aboutUs">
           <CompanyBrief />
         </section>
+        <section id='aboutSukoon'>
+          <AboutSukoon />
+        </section>
         <section id="contactUs">
           <SubmissionCard />
         </section>
+        
         <Footer />
       </div>
     </Router>
