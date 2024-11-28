@@ -9,6 +9,9 @@ import ViewStats from '@/images/aboutSukoonImages/viewStats.png'
 import './aboutSukoonInfo.css'
 
 const AboutSukoonInfo = () => {
+
+    const opacityValue = .4;
+
   return (
     <div>
       <Box
@@ -71,7 +74,9 @@ const AboutSukoonInfo = () => {
 
         <Flex
         className='aboutUsFlexContainers'
+        
         >
+            
             <Box
             className='aboutUsImageContainer'
             >
@@ -82,8 +87,14 @@ const AboutSukoonInfo = () => {
             <Box 
             className='aboutUsHeadingContainer'
             >
-                <Heading>
-                    Organise devices into rooms!
+                <Heading 
+                className="aboutUsHeaders"
+                >
+                    Organise devices into rooms! 
+
+                </Heading>
+                <Heading className='aboutUsText' fontWeight='100'>
+                    For your convenience, bring you the option to group different devices into different rooms for the sake of ease of management and proper knowledge of allocation. With "Rooms", you can now add or remove rooms, and allocate any device to any room of your choice. We will provide you with an accumulation of statistics for each room, and a tab specifically to view all devices.
 
                 </Heading>
             </Box>
@@ -92,6 +103,21 @@ const AboutSukoonInfo = () => {
         <Flex
         className='aboutUsFlexContainers'
         >
+
+            <Box
+            className='aboutUsHeadingContainer'
+            >
+                <Heading className="aboutUsHeaders">
+                    Configure Devices Remotely!
+
+                </Heading>
+
+                <Heading className='aboutUsText' letterSpacing={'wider'}>
+                    Configure devices on the go! Upon accessing rooms, you can pick any device to configure. Upon selecting the device, you will be presented with a menu that allows you to modify the device's current state, and even schedule changes! Each device has customizable settings, which allow you to personalize their behavior to suit your needs! At the end of the day, it is all up to you; control your devices from anywhere, anyway, even if you're not physically in the room.
+
+                </Heading>
+            </Box>
+
             <Box
             className='aboutUsImageContainer'
             >
@@ -99,14 +125,7 @@ const AboutSukoonInfo = () => {
 
             </Box>
 
-            <Box
-            className='aboutUsHeadingContainer'
-            >
-                <Heading>
-                    Configure Devices Remotely!
 
-                </Heading>
-            </Box>
         </Flex>
 
         <Flex
@@ -121,8 +140,13 @@ const AboutSukoonInfo = () => {
             </Box>
 
             <Box className='aboutUsHeadingContainer'>
-                <Heading>
+                <Heading className='aboutUsHeaders'>
                     View your consumption statistics!
+
+                </Heading>
+
+                <Heading className='aboutUsText' letterSpacing={'wider'}>
+                    To ensure you're in control, you can view the consumption statistics even down to specific devices whenever. Data is updated live throughout the day, and at the end of each day, you'll receive an aggregated overview of your consumption, with insights extending back over days, months, and even years. From graphs to tables to textual descriptions, data is presented in a very easy-to-understand way for all audiences!
 
                 </Heading>
             </Box>
@@ -131,18 +155,25 @@ const AboutSukoonInfo = () => {
         <Flex
         className='aboutUsFlexContainers'
         >
+            
+
+            <Box className='aboutUsHeadingContainer'>
+                <Heading className='aboutUsHeaders'>
+                    Play our game in "Be'ati"!
+
+                </Heading>
+
+                <Heading className='aboutUsText' letterSpacing={'wider'}>
+                    Introducing "Be'ati", our new game to make the process of energy conservation easier to swallow! Set goals for yourself, and unlock new plants to grow your garden! The more energy you save, the larger your garden grows, and the more milestone rewards you will receive. Compete with other players to climb up the leaderboard and improve energy saving habits in a fun and exciting way!
+
+                </Heading>
+            </Box>
+
             <Box
             className='aboutUsImageContainer'
             >
                 <img src={Beati} alt="room layout image" className='aboutUsImages'/>
 
-            </Box>
-
-            <Box className='aboutUsHeadingContainer'>
-                <Heading>
-                    Play our game in "Be'ati"!
-
-                </Heading>
             </Box>
         </Flex>
 
@@ -158,8 +189,13 @@ const AboutSukoonInfo = () => {
             </Box>
 
             <Box className='aboutUsHeadingContainer'>
-                <Heading>
+                <Heading className='aboutUsHeaders'>
                     Customise Your Profile!
+
+                </Heading>
+
+                <Heading className='aboutUsText' letterSpacing={'wider'}>
+                    Customise your profile! Our application is accessible to any and all audiences. Our application has compatibility for a wide range of common languages. You can customize the light mode for your own preferences, and can even increase or decrease text sizes to account for potential difficulty in reading. Enable high-contrast modes or screen reader support for users with visual impairments, and much more!
 
                 </Heading>
             </Box>
@@ -168,19 +204,25 @@ const AboutSukoonInfo = () => {
         <Flex
         className='aboutUsFlexContainers'
         >
+            
+
+            <Box className='aboutUsHeadingContainer'>
+                <Heading className='aboutUsHeaders'>
+                    Chat with the "Energy Genie"!
+
+                </Heading>
+
+                <Heading className='aboutUsText' letterSpacing={'wider'}>
+                    Introducing the "Energy Genie", our live chatbot who is ready to help you whenever you need! If you have any concerns to do with energy management, whether they are general enquiries or enquiries specific to your consumption, or if you would like to enquire about the application itself, "Energy Genie" will be your smart assistant to guide you through doubts!    
+                </Heading>
+            </Box>
+
             <Box
             className='aboutUsImageContainer'
 
             >
                 <img src={Chatbot} alt="room layout image" className='aboutUsImages'/>
 
-            </Box>
-
-            <Box className='aboutUsHeadingContainer'>
-                <Heading>
-                    Chat with the "Energy Genie"!
-
-                </Heading>
             </Box>
         </Flex>
 

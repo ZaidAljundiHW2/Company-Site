@@ -36,7 +36,7 @@ const SubmissionCard = () => {
 
   return (
     <div style={{
-      background: 'linear-gradient(135deg, #1E3A8A, #3B82F6)', // Blue gradient background
+      background: 'linear-gradient(135deg, #1d1378, #3B82F6)', // Blue gradient background
       padding: '40px', // Padding inside the div
       //borderRadius: '10px', // Rounded corners
       boxShadow: '0 6px 15px rgba(0, 0, 0, 0.1)', // Subtle shadow for depth

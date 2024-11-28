@@ -1,46 +1,169 @@
 .aboutUsImages {
-    width: 65%; /* Ensure the image fits within the container */
-    object-fit: contain; /* Prevent image distortion */
-    margin: 0 auto; /* Center the images horizontally */
-}
-
-.aboutUsImageContainer, .aboutUsHeadingContainer {
+    width: 65%;
+    object-fit: contain;
+    margin: 0 auto;
+    border: #000000;
+    border-radius: 50%;
+    filter: brightness(.7) contrast(.7);
+  }
+  
+.aboutUsImageContainer,
+.aboutUsHeadingContainer {
     flex: 1;
     display: flex;
     align-items: center;
-    padding: 10px; /* Add padding for spacing around the content */
+    padding: 10px;
 }
-
+  
 .aboutUsHeadingContainer {
     justify-content: flex-start;
-    background-color: orange;
+    background-color: transparent;
     width: 100%;
     height: 100%;
-    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
 }
-
+  
 .aboutUsImageContainer {
     flex: 1;
     display: flex;
-    justify-content: flex-start; /* Align the image container to the left */
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px; /* Optional: Add some spacing inside the container */
-    margin-right: 300px; /* Push the container further to the left */
+    padding: 10px;
+    background-color: transparent;
+}
+  
+.aboutUsFlexContainers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Ensures even distribution of elements */
+    margin-bottom: 30px;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    width: 100%; /* Ensure the container spans the full width */
+    position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+    
 }
 
-.aboutUsFlexContainers {
-    display: flex; /* Enables flexbox */
-    flex-direction: column; /* Default direction for smaller screens */
-    align-items: center; /* Align items in the cross-axis (vertical for column direction) */
-    margin-bottom: 30px; /* Add space below each flex container */
-    justify-content: center; /* Center items along the main axis */
-    gap: 20px; /* Space between the image and heading containers */
-    padding: 20px; /* Add padding around the whole container */
+.aboutUsFlexContainers:nth-child(even) {
+    background: linear-gradient( 
+            rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .3) 2.339%,
+            rgba(13, 13, 13, .3) 2.339%, rgba(13, 13, 13, .3) 4.878%,
+            rgba(26, 26, 26, .3) 4.878%, rgba(26, 26, 26, .3) 7.317%,
+            rgba(38, 38, 38, .3) 7.317%, rgba(38, 38, 38, .3) 9.756%,
+            rgba(51, 51, 51, .3) 9.756%, rgba(51, 51, 51, .3) 12.195%, 
+            rgba(64, 64, 64, .3) 12.195%, rgba(64, 64, 64, .3) 14.634%, 
+            rgba(77, 77, 77, .3) 14.634%, rgba(77, 77, 77, .3) 17.073%, 
+            rgba(89, 89, 89, .3) 17.073%, rgba(89, 89, 89, .3) 19.512%, 
+            rgba(102, 102, 102, .3) 19.512%, rgba(102, 102, 102, .3) 21.951%, 
+            rgba(115, 115, 115, .3) 21.951%, rgba(115, 115, 115, .3) 24.390%, 
+            rgba(128, 128, 128, .3) 24.390%, rgba(128, 128, 128, .3) 26.829%, 
+            rgba(140, 140, 140, .3) 26.829%, rgba(140, 140, 140, .3) 29.268%,
+            rgba(153, 153, 153, .3) 29.268%, rgba(153, 153, 153, .3) 31.707%, 
+            rgba(166, 166, 166, .3) 31.707%, rgba(166, 166, 166, .3) 34.146%, 
+            rgba(179, 179, 179, .3) 34.146%, rgba(179, 179, 179, .3) 36.585%, 
+            rgba(191, 191, 191, .3) 36.585%, rgba(191, 191, 191, .3) 39.024%, 
+            rgba(204, 204, 204, .3) 39.024%, rgba(204, 204, 204, .3) 41.363%, 
+            rgba(217, 217, 217, .3) 41.363%, rgba(217, 217, 217, .3) 43.902%, 
+            rgba(230, 230, 230, .3) 43.902%, rgba(230, 230, 230, .3) 46.341%, 
+            rgba(242, 242, 242, .3) 46.341%, rgba(242, 242, 242, .3) 48.780%, 
+            rgba(255, 255, 255, .3) 48.780%, rgba(255, 255, 255, .3) 51.219%, 
+            rgba(242, 242, 242, .3) 51.219%, rgba(242, 242, 242, .3) 53.658%, 
+            rgba(230, 230, 230, .3) 53.658%, rgba(230, 230, 230, .3) 56.097%, 
+            rgba(217, 217, 217, .3) 56.097%, rgba(217, 217, 217, .3) 58.536%, 
+            rgba(204, 204, 204, .3) 58.536%, rgba(204, 204, 204, .3) 60.975%, 
+            rgba(191, 191, 191, .3) 60.975%, rgba(191, 191, 191, .3) 63.314%, 
+            rgba(179, 179, 179, .3) 63.314%, rgba(179, 179, 179, .3) 65.853%, 
+            rgba(166, 166, 166, .3) 65.853%, rgba(166, 166, 166, .3) 68.292%, 
+            rgba(153, 153, 153, .3) 68.292%, rgba(153, 153, 153, .3) 70.731%, 
+            rgba(140, 140, 140, .3) 70.731%, rgba(140, 140, 140, .3) 73.170%, 
+            rgba(128, 128, 128, .3) 73.170%, rgba(128, 128, 128, .3) 75.609%, 
+            rgba(115, 115, 115, .3) 75.609%, rgba(115, 115, 115, .3) 78.048%, 
+            rgba(102, 102, 102, .3) 78.048%, rgba(102, 102, 102, .3) 80.387%, 
+            rgba(89, 89, 89, .3) 80.387%, rgba(89, 89, 89, .3) 82.926%, 
+            rgba(77, 77, 77, .3) 82.926%, rgba(77, 77, 77, .3) 85.365%, 
+            rgba(64, 64, 64, .3) 85.365%, rgba(64, 64, 64, .3) 87.804%, 
+            rgba(51, 51, 51, .3) 87.804%, rgba(51, 51, 51, .3) 90.243%, 
+            rgba(38, 38, 38, .3) 90.243%, rgba(38, 38, 38, .3) 92.682%, 
+            rgba(26, 26, 26, .3) 92.682%, rgba(26, 26, 26, .3) 95.121%, 
+            rgba(13, 13, 13, .3) 97.560%, rgba(13, 13, 13, .3) 97.560%, 
+            rgba(0, 0, 0, .3) 99.999%
+        ), linear-gradient(90deg, #000000 40%, #671a2f);
+}
+
+.aboutUsFlexContainers:nth-child(odd) {
+    background: linear-gradient( 
+            rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .3) 2.339%,
+            rgba(13, 13, 13, .3) 2.339%, rgba(13, 13, 13, .3) 4.878%,
+            rgba(26, 26, 26, .3) 4.878%, rgba(26, 26, 26, .3) 7.317%,
+            rgba(38, 38, 38, .3) 7.317%, rgba(38, 38, 38, .3) 9.756%,
+            rgba(51, 51, 51, .3) 9.756%, rgba(51, 51, 51, .3) 12.195%, 
+            rgba(64, 64, 64, .3) 12.195%, rgba(64, 64, 64, .3) 14.634%, 
+            rgba(77, 77, 77, .3) 14.634%, rgba(77, 77, 77, .3) 17.073%, 
+            rgba(89, 89, 89, .3) 17.073%, rgba(89, 89, 89, .3) 19.512%, 
+            rgba(102, 102, 102, .3) 19.512%, rgba(102, 102, 102, .3) 21.951%, 
+            rgba(115, 115, 115, .3) 21.951%, rgba(115, 115, 115, .3) 24.390%, 
+            rgba(128, 128, 128, .3) 24.390%, rgba(128, 128, 128, .3) 26.829%, 
+            rgba(140, 140, 140, .3) 26.829%, rgba(140, 140, 140, .3) 29.268%,
+            rgba(153, 153, 153, .3) 29.268%, rgba(153, 153, 153, .3) 31.707%, 
+            rgba(166, 166, 166, .3) 31.707%, rgba(166, 166, 166, .3) 34.146%, 
+            rgba(179, 179, 179, .3) 34.146%, rgba(179, 179, 179, .3) 36.585%, 
+            rgba(191, 191, 191, .3) 36.585%, rgba(191, 191, 191, .3) 39.024%, 
+            rgba(204, 204, 204, .3) 39.024%, rgba(204, 204, 204, .3) 41.363%, 
+            rgba(217, 217, 217, .3) 41.363%, rgba(217, 217, 217, .3) 43.902%, 
+            rgba(230, 230, 230, .3) 43.902%, rgba(230, 230, 230, .3) 46.341%, 
+            rgba(242, 242, 242, .3) 46.341%, rgba(242, 242, 242, .3) 48.780%, 
+            rgba(255, 255, 255, .3) 48.780%, rgba(255, 255, 255, .3) 51.219%, 
+            rgba(242, 242, 242, .3) 51.219%, rgba(242, 242, 242, .3) 53.658%, 
+            rgba(230, 230, 230, .3) 53.658%, rgba(230, 230, 230, .3) 56.097%, 
+            rgba(217, 217, 217, .3) 56.097%, rgba(217, 217, 217, .3) 58.536%, 
+            rgba(204, 204, 204, .3) 58.536%, rgba(204, 204, 204, .3) 60.975%, 
+            rgba(191, 191, 191, .3) 60.975%, rgba(191, 191, 191, .3) 63.314%, 
+            rgba(179, 179, 179, .3) 63.314%, rgba(179, 179, 179, .3) 65.853%, 
+            rgba(166, 166, 166, .3) 65.853%, rgba(166, 166, 166, .3) 68.292%, 
+            rgba(153, 153, 153, .3) 68.292%, rgba(153, 153, 153, .3) 70.731%, 
+            rgba(140, 140, 140, .3) 70.731%, rgba(140, 140, 140, .3) 73.170%, 
+            rgba(128, 128, 128, .3) 73.170%, rgba(128, 128, 128, .3) 75.609%, 
+            rgba(115, 115, 115, .3) 75.609%, rgba(115, 115, 115, .3) 78.048%, 
+            rgba(102, 102, 102, .3) 78.048%, rgba(102, 102, 102, .3) 80.387%, 
+            rgba(89, 89, 89, .3) 80.387%, rgba(89, 89, 89, .3) 82.926%, 
+            rgba(77, 77, 77, .3) 82.926%, rgba(77, 77, 77, .3) 85.365%, 
+            rgba(64, 64, 64, .3) 85.365%, rgba(64, 64, 64, .3) 87.804%, 
+            rgba(51, 51, 51, .3) 87.804%, rgba(51, 51, 51, .3) 90.243%, 
+            rgba(38, 38, 38, .3) 90.243%, rgba(38, 38, 38, .3) 92.682%, 
+            rgba(26, 26, 26, .3) 92.682%, rgba(26, 26, 26, .3) 95.121%, 
+            rgba(13, 13, 13, .3) 97.560%, rgba(13, 13, 13, .3) 97.560%, 
+            rgba(0, 0, 0, .3) 99.999%
+        ), linear-gradient(-90deg, #000000 40%, #671a2f);
+}
+
+
+.aboutUsHeaders {
+    font-size: 400%;
+    line-height: 120%;
+    
+}
+
+.aboutUsText {
+    font-size: 200%;
+    font-weight: 100;
+    margin-top: 5%;
+    width: 80%;
+    line-height: 120%;
 }
 
 @media (min-width: 768px) {
     .aboutUsFlexContainers {
-        flex-direction: row; /* Changes direction to row for medium and larger screens */
-        gap: 40px; /* Add more space between the image and heading for larger screens */
+      gap: 40px;
+}
+  
+    /* Alternate the order of elements for alternating image and heading positions */
+    .aboutUsFlexContainers:nth-child(even) .aboutUsImageContainer {
+      order: 2;
+    }
+    .aboutUsFlexContainers:nth-child(even) .aboutUsHeadingContainer {
+      order: 1;
     }
 }
+  
