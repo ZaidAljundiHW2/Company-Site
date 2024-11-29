@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box } from '@chakra-ui/react'; // Import Chakra Box for responsive containers
 import NavBar from './customComponents/navBar'; // Import the NavBar
 import Hero from './customComponents/hero';

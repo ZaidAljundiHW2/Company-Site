@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import CompanyLogo from '@/images/companyLogo.png'
 import './Footer.css'; 

@@ -1,5 +1,4 @@
 import { Box, Flex, Heading } from '@chakra-ui/react';
-import React from 'react';
 import Beati from '@/images/aboutSukoonImages/beati.png'
 import Chatbot from '@/images/aboutSukoonImages/chatbot.png'
 import CustomiseAccount from '@/images/aboutSukoonImages/customiseAccount.png'
@@ -10,7 +9,6 @@ import './aboutSukoonInfo.css'
 
 const AboutSukoonInfo = () => {
 
-    const opacityValue = .4;
 
   return (
     <div>

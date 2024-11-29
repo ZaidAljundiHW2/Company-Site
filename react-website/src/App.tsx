@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Hero from './customComponents/hero';
 import CompanyBrief from './customComponents/companyBrief';
 import SubmissionCard from './customComponents/submissionCard';

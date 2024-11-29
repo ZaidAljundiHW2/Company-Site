@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Box } from '@chakra-ui/react';
 import NavBar from './customComponents/navBar'; // Import the NavBar
 import AboutUsHero from './customComponents/aboutUsHero';
 import './AboutUs.css'; // Import the CSS file

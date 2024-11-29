@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Box, Heading, Button } from '@chakra-ui/react';
 import './companyBrief.css';
 import CompanyDiagram from '@/images/companyBriefDiagram.png';

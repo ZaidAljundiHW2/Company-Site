@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Button, Heading, Flex } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import PhInterface from '@/images/smartPic.jpg';

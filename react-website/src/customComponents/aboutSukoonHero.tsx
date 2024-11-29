@@ -1,4 +1,3 @@
-import React from 'react';
 import AnimatedBackground from '@/images/AnimatedBackgroundSmoke.mp4';
 import { Box, Heading } from '@chakra-ui/react';
 
