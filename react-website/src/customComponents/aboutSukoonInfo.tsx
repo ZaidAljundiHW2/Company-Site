@@ -98,6 +98,13 @@ const AboutSukoonInfo = () => {
 
                 </Heading>
             </Box>
+
+            <Box
+            className='aboutUsPhoneImageContainer'
+            >
+                <img src={RoomLayout} alt="room layout image" className='aboutUsPhoneImages'/>
+
+            </Box>
         </Flex>
 
         <Flex
@@ -121,7 +128,14 @@ const AboutSukoonInfo = () => {
             <Box
             className='aboutUsImageContainer'
             >
-                <img src={DeviceConfig} alt="room layout image" className='aboutUsImages'/>
+                <img src={DeviceConfig} alt="device config image" className='aboutUsImages'/>
+
+            </Box>
+
+            <Box
+            className='aboutUsPhoneImageContainer'
+            >
+                <img src={DeviceConfig} alt="device config image" className='aboutUsPhoneImages'/>
 
             </Box>
 
@@ -150,6 +164,14 @@ const AboutSukoonInfo = () => {
 
                 </Heading>
             </Box>
+
+            <Box
+            className='aboutUsPhoneImageContainer'
+
+            >
+                <img src={ViewStats} alt="stats image" className='aboutUsPhoneImages'/>
+
+            </Box>
         </Flex>
 
         <Flex
@@ -172,7 +194,14 @@ const AboutSukoonInfo = () => {
             <Box
             className='aboutUsImageContainer'
             >
-                <img src={Beati} alt="room layout image" className='aboutUsImages'/>
+                <img src={Beati} alt="beati layout image" className='aboutUsImages'/>
+
+            </Box>
+
+            <Box
+            className='aboutUsPhoneImageContainer'
+            >
+                <img src={Beati} alt="beati image" className='aboutUsPhoneImages'/>
 
             </Box>
         </Flex>
@@ -184,7 +213,7 @@ const AboutSukoonInfo = () => {
             className='aboutUsImageContainer'
 
             >
-                <img src={CustomiseAccount} alt="room layout image" className='aboutUsImages'/>
+                <img src={CustomiseAccount} alt="customise profile image" className='aboutUsImages'/>
 
             </Box>
 
@@ -198,6 +227,14 @@ const AboutSukoonInfo = () => {
                     Customise your profile! Our application is accessible to any and all audiences. Our application has compatibility for a wide range of common languages. You can customize the light mode for your own preferences, and can even increase or decrease text sizes to account for potential difficulty in reading. Enable high-contrast modes or screen reader support for users with visual impairments, and much more!
 
                 </Heading>
+            </Box>
+
+            <Box
+            className='aboutUsPhoneImageContainer'
+
+            >
+                <img src={CustomiseAccount} alt="customise profile image" className='aboutUsPhoneImages'/>
+
             </Box>
         </Flex>
 
@@ -221,7 +258,15 @@ const AboutSukoonInfo = () => {
             className='aboutUsImageContainer'
 
             >
-                <img src={Chatbot} alt="room layout image" className='aboutUsImages'/>
+                <img src={Chatbot} alt="chatbot image" className='aboutUsImages'/>
+
+            </Box>
+
+            <Box
+            className='aboutUsPhoneImageContainer'
+
+            >
+                <img src={Chatbot} alt="chatbot image" className='aboutUsPhoneImages'/>
 
             </Box>
         </Flex>

@@ -135,35 +135,63 @@
             rgba(26, 26, 26, .3) 92.682%, rgba(26, 26, 26, .3) 95.121%, 
             rgba(13, 13, 13, .3) 97.560%, rgba(13, 13, 13, .3) 97.560%, 
             rgba(0, 0, 0, .3) 99.999%
-        ), linear-gradient(-90deg, #000000 40%, #671a2f);
+        ), linear-gradient(-90deg, #000000 40%, #671a2f), linear-gradient(#000000 10%, transparent, #000000 10%);
 }
 
 
+
 .aboutUsHeaders {
-    font-size: 400%;
+    font-size: 350%;
     line-height: 120%;
     
 }
 
 .aboutUsText {
-    font-size: 200%;
+    font-size: 150%;
     font-weight: 100;
     margin-top: 5%;
     width: 80%;
     line-height: 120%;
 }
 
-@media (min-width: 768px) {
+.aboutUsPhoneImageContainer {
+    display: none;
+
+}
+
+
+@media (max-width: 768px) {
     .aboutUsFlexContainers {
       gap: 40px;
+      flex-direction: column;
 }
   
     /* Alternate the order of elements for alternating image and heading positions */
-    .aboutUsFlexContainers:nth-child(even) .aboutUsImageContainer {
+    /* .aboutUsFlexContainers:nth-child(even) .aboutUsImageContainer {
       order: 2;
     }
     .aboutUsFlexContainers:nth-child(even) .aboutUsHeadingContainer {
       order: 1;
+    } */
+
+    .aboutUsHeaders {
+        font-size: 150%;
+    }
+
+    .aboutUsText {
+        font-size: 100%;
+    }
+
+    .aboutUsImages, .aboutUsImageContainer {
+        display: none;
+    }
+
+    .aboutUsPhoneImages, .aboutUsImageContainer {
+        display: flex;
+    }
+
+    .aboutUsPhoneImages {
+        width: 100%;
     }
 }
   
